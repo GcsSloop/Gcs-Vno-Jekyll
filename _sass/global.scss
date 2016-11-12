@@ -14,7 +14,7 @@ html {
 body {
   font-family: $sans-font;
   font-size: 1em;
-  color: $gray-darker;
+  color: $gray-darkest;
   -webkit-font-smoothing: antialiased;
 }
 
@@ -99,8 +99,8 @@ em {
 }
 
 blockquote {
-  padding: 10px 20px;
-  margin: 0 0 20px;
+  padding: 0px 10px;
+  margin: 0 0 10px;
   font-family: $serif-font;
   font-weight: normal;
   font-size: 1em;
@@ -117,12 +117,17 @@ blockquote {
 
 }
 
+sup {
+  font-size: .8em;
+  vertical-align: text-bottom;
+}
+
 // ------------------------------
 // BASIC STYLING
 // ------------------------------
 
 ol, ul {
-  margin: 0 0 1.3em 2.5em;
+  margin: 0 0 .3em 1em;
 
   li {
     margin: 0 0 .2em 0;
