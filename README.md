@@ -22,10 +22,21 @@
 
 到 [多说官网](http://duoshuo.com/) 申请一个账号，之后将自动生成的代码复制到 `/_includes/comments.html` 文件中即可。
 
+注意修改自动生成代码中的url，多说中会有提示，示例写法：
+
+``` html
+ <div id="comments" class="ds-thread" data-thread-key="{{page.id}}" data-title="{{page.title}}" data-url="{{site.url}}{{page.url}}"></div>
+```
+
 ### 2.本地调试方法
 
 本机环境配置完成后，在命令行中进入该文件夹根目录，输入 `jekyll server` 稍等片刻就能在 <http://localhost:4000> 看到效果了。
 
 
+## Licence
 
-本主题是基于 onevcat 大神的 [OneV-s-Den](https://github.com/onevcat/OneV-s-Den) 修改而来的。
+本主题是基于 onevcat 大神的 [OneV-s-Den](https://github.com/onevcat/OneV-s-Den) 修改而来的，非常感谢 onevcat 以及之前作者作出的贡献。
+
+Great thanks to [Dale Anthony](https://github.com/daleanthony) and his [Uno](https://github.com/daleanthony/uno). Vno Jekyll is based on Uno, and contains a lot of modification on page layout, animation, font and some more things I can not remember. Vno Jekyll is followed with Uno and be licensed as [Creative Commons Attribution 4.0 International](http://creativecommons.org/licenses/by/4.0/). See the link for more information.
+
+
