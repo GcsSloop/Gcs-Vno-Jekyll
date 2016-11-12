@@ -59,7 +59,7 @@ redirect_from:
   - /1970/01/about/
 ```
 
-#### 6.SEO优化
+#### 7.SEO优化
 
 为了增加你博文被搜索到的概率，可以考虑使用 SEO 优化，我定义了两个属性，`keywords` 和 `excerpt` ：
 
