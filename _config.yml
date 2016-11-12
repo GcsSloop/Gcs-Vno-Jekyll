@@ -1,0 +1,57 @@
+# Basic
+title: GcsSloop
+subtitle: Just do IT later.
+welcome_message: 欢迎来到我的魔法世界! 
+description: 嗨，我是 GcsSloop，一名来自2.5次元的魔法师，Android自定义View系列文章作者，非著名程序员。
+creator: <a href="http://www.GcsSloop.com">@GcsSloop</a>
+
+url: "http://www.gcssloop.com"
+
+permalink: /:categories/:title
+
+# Format
+highlighter: rouge
+markdown: kramdown
+redcarpet:
+  extensions: ["no_intra_emphasis", "fenced_code_blocks", "autolink", "strikethrough", "superscript", tables]
+
+# supported colors: blue, green, purple, red, orange or slate. If you need clear, leave it empty.
+cover_color: slate
+
+blog_button:
+    title: 博客
+    description: 访问博客
+
+nav:
+    - {title: GitHub,     in_site: false,  description: GcsSloop's GitHub,    url: 'https://github.com/GcsSloop'}
+    - {title: 目录,        in_site: true,  description: 博客目录,               url: '/timeline'}
+    - {title: 关于,        in_site: true,  description: 关于作者 GcsSloop,       url: '/info/about'}
+    
+
+
+gems:
+    - jekyll-paginate
+    - jekyll-sitemap
+    - jekyll-redirect-from
+
+# Pagination
+paginate: 10
+paginate_path: "page/:num/"
+
+# Comment
+comment:
+    disqus: GcsSloop
+    # duoshuo:
+# Social
+social:
+    weibo: GcsSloop
+    github: GcsSloop
+    twitter: GcsSloop
+    rss: /feed.xml
+    mail: GcsSloop@gmail.com
+    copyright: http://choosealicense.online
+
+# Google Analytics
+ga:
+    id: UA-82493667-1
+    host: www.gcssloop.com

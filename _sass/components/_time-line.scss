@@ -1,0 +1,52 @@
+// ------------------------------
+// TIME LINE
+// ------------------------------
+
+.time-line {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  text-align: left;
+
+  li {
+    margin: 0 0 .6em 0;
+
+    &:last-child {
+
+      hr {
+        display: none;
+      }
+
+    }
+
+  }
+
+  hr {
+    display: block;
+    width: 30%;
+    margin: 2.2em 0 2.1em 0;
+    border-top: 1px solid #DDDDDD;
+  }
+
+  a {
+  color: $menu-link-color;
+  
+    &:hover {
+      color: $menu-hover-color;
+    }
+  }
+}
+
+  .time-line-title {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 1.1em;
+    line-height: 1.2em;
+  }
+
+  .time-line-mate {
+    display: block;
+    margin: .2em 0 .2em 0;
+    font-size: .9em;
+    color: darken($gray, 2%);
+  }

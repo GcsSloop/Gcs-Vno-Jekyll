@@ -1,0 +1,59 @@
+---
+layout: post
+category: Info
+title: 目录视图
+date: 1970-01-01 00:00:00.000000000 +00:00
+tags: GcsSloop, info
+keywords: GcsSloop, gcssloop
+excerpt: 博客时间线
+---
+
+<!-- SiteSearch Google -->
+
+<form class="google-search" method="get" action="http://www.google.com/search" target="_blank">
+  <div class="search-wrap">
+    <div width="100%">
+      <div width="100%">
+      <input type="text" name="q" value=""/>
+      <input type="submit" src="/assets/siteinfo/search_bg.png" alt="Submit" width="80" height="24" value="搜索" />
+      </div>
+      <input type="hidden" name="domains" value="http://www.gcssloop.com" /> 
+      <input type="hidden" name="sitesearch" value="http://www.gcssloop.com" />
+      <input type="hidden" name="ie" value="utf-8" />
+      <input type="hidden" name="oe" value="utf-8" />
+      <input type="hidden" name="hl" value="zh-CN" />
+    </div>
+  </div>
+</form>
+
+<div style="margin: 10px 0 20px 0;">
+  站内搜索功能由谷歌提供，需科学上网。
+</div>
+
+<!-- SiteSearch Google -->
+
+  <ol class="time-line">
+    <hr />
+    <!--置顶-->
+    {% for post in site.posts %}
+      {% if post.istop %}
+        <li>
+          <h1 class="time-line-title"><a href="{{ post.url }}" title="访问 {{ post.title }}">[置顶]{{ post.title }}</a></h1>
+          <div class="time-line-mate"><time datetime="{{post.date | date: date_to_xmlschema}}" class="post-list__meta--date date">{{ post.date | date: "%F"}}</time> &#8226; <span class="post-list__meta--tags tags">{{ post.category }}</span> </div>
+        </li>
+      {% endif %}
+    {% endfor %}
+        <!--置顶-->
+    {% for post in site.posts %}        
+      {% if post.istop %}
+      {% else %}
+        <li>
+          <h1 class="time-line-title"><a href="{{ post.url }}" title="访问 {{ post.title }}">{{ post.title }}</a></h1>
+          <div class="time-line-mate"><time datetime="{{post.date | date: date_to_xmlschema}}" class="post-list__meta--date date">{{ post.date | date: "%F"}}</time> &#8226; <span class="post-list__meta--tags tags">{{ post.category }}</span></div>
+        </li>
+      {% endif %}
+    {% endfor %}
+  </ol>
+
+
+

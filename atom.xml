@@ -1,0 +1,32 @@
+---
+layout: null
+---
+<?xml version="1.0"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+ 
+  <title>luolinjia.com</title>
+  <link href="http://luolinjia.com/cn/"/>
+  <link type="application/atom+xml" rel="self" href="http://luolinjia.com/cn/atom.xml"/>
+  <updated>{{ site.time | date_to_xmlschema }}</updated>
+  <id>http://luolinjia.com/cn/</id>
+  <author>
+    <name>Karl Luo</name>
+    <email>ideexto@gmail.com</email>
+  </author>
+
+
+ {% for post in site.posts %}
+  <entry>
+    <id>{{ site.url }}{{ post.id }}</id>
+    <link type="text/html" rel="alternate" href="{{ site.url }}{{ post.url }}"/>
+    <title>{{ post.title | xml_escape }}</title>
+    <updated>{{ post.date | date_to_xmlschema }}</updated>
+    <author>
+      <name>Karl Luo</name>
+      <uri>http://luolinjia.com/cn/</uri>
+    </author>
+    <content type="html">{{ post.content | xml_escape }}</content>
+  </entry>
+ {% endfor %}
+
+</feed>
